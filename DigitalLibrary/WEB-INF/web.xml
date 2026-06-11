@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Digital Library Management System</display-name>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SearchServlet  —  Module 4: doGet + Cookie setting
+    ══════════════════════════════════════════════════════════ -->
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>servlets.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <!-- ═══════════════════════════════════════════════════════
+         IssueBookServlet  —  Module 4: doPost + Module 5: JDBC Tx
+    ══════════════════════════════════════════════════════════ -->
+    <servlet>
+        <servlet-name>IssueBookServlet</servlet-name>
+        <servlet-class>servlets.IssueBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IssueBookServlet</servlet-name>
+        <url-pattern>/issue</url-pattern>
+    </servlet-mapping>
+
+    <!-- ═══════════════════════════════════════════════════════
+         ReturnBookServlet  —  Module 4: doPost + Module 5: JDBC Tx
+    ══════════════════════════════════════════════════════════ -->
+    <servlet>
+        <servlet-name>ReturnBookServlet</servlet-name>
+        <servlet-class>servlets.ReturnBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReturnBookServlet</servlet-name>
+        <url-pattern>/return</url-pattern>
+    </servlet-mapping>
+
+    <!-- Default welcome page -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
