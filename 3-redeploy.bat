@@ -6,7 +6,7 @@
 :: ============================================================
 
 set TOMCAT_HOME=C:\tomcat\apache-tomcat-11.0.22
-set PROJECT=C:\Users\amitr\OneDrive\Desktop\digital_library\DigitalLibrary
+set PROJECT=C:\Users\amitr\OneDrive\Desktop\Other Projects\digital_library\DigitalLibrary
 set SERVLET_API=%TOMCAT_HOME%\lib\servlet-api.jar
 set MYSQL_JAR=%PROJECT%\WEB-INF\lib\mysql-connector-j-8.3.0.jar
 set SRC=%PROJECT%\src
