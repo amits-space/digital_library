@@ -32,7 +32,7 @@ ping -n 9 127.0.0.1 >nul
 
 :: Step 3: Load the schema while mysqld is still up in this CMD session
 echo [3/3] Loading the digital_library schema...
-C:\mysql\bin\mysql.exe -u root --connect-timeout=10 -e "source C:/Users/amitr/OneDrive/Desktop/digital_library/DigitalLibrary/database/schema.sql"
+C:\mysql\bin\mysql.exe -u root --connect-timeout=10 -e "source C:/Users/amitr/OneDrive/Desktop/Other Projects/digital_library/DigitalLibrary/database/schema.sql"
 
 if %ERRORLEVEL% EQU 0 (
     echo.

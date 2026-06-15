@@ -47,7 +47,7 @@ if %ERRORLEVEL% NEQ 0 (
 :: Load the schema
 echo [3/3] Loading the digital_library schema...
 ping -n 4 127.0.0.1 >nul
-C:\mysql\bin\mysql.exe -u root --connect-timeout=10 -e "source C:/Users/amitr/OneDrive/Desktop/digital_library/DigitalLibrary/database/schema.sql"
+C:\mysql\bin\mysql.exe -u root --connect-timeout=10 -e "source C:/Users/amitr/OneDrive/Desktop/Other Projects/digital_library/DigitalLibrary/database/schema.sql"
 
 echo.
 echo  ================================================
